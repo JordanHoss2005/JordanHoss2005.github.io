@@ -214,6 +214,18 @@
             transition: all 0.3s ease;
         }
 
+        /* Ensure contact links look like the chips */
+        a.contact-item {
+            color: white;
+            text-decoration: none;
+        }
+        a.contact-item:visited { color: white; }
+        a.contact-item:hover {
+            text-decoration: none;
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+
         .contact-item:hover {
             background: rgba(255, 255, 255, 0.2);
             transform: translateY(-2px);
@@ -896,8 +908,10 @@
             <div class="name">Jordan Hoss</div>
             <div class="preferred-name">(Mohammadamin Hosseini Kayani)</div>
             <div class="contact-info">
-                <div class="contact-item">📧 amiin.hosseini@mail.utoronto.ca</div>
-                <div class="contact-item">📞 416-708-7702</div>
+                <!-- Updated: clickable contact links -->
+                <a class="contact-item" href="mailto:Amiin.hosseini@mail.utoronto.ca">📧 Amiin.hosseini@mail.utoronto.ca</a>
+                <a class="contact-item" href="tel:+14167087702">📞 +1 (416) 708-7702</a>
+                <a class="contact-item" href="https://www.linkedin.com/in/jordan-hoss-8bbb12195?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bp1mkyJPUTJ%2BZJQxPGXHprQ%3D%3D" target="_blank" rel="noopener">🔗 LinkedIn</a>
                 <div class="contact-item">📍 Toronto, ON, Canada</div>
             </div>
         </div>
@@ -974,7 +988,7 @@
                 <h2 class="section-title">Publications</h2>
                 <div class="pub-item">
                     <div class="pub-title">Hoss, J.* (First Author)</div>
-                    <div><em>TactiFlow: Design and Evaluation of Wrist‑Worn Tangibles for Dynamically Linking to and Manipulating Parameters in Mixed Reality</em>. <strong>Under review</strong> at ACM CHI 2026.</div>
+                    <div><em>TactiFlow: Design and Evaluation of Wrist-Worn Tangibles for Dynamically Linking to and Manipulating Parameters in Mixed Reality</em>. <strong>Under review</strong> at ACM CHI 2026.</div>
                     <div style="font-size:0.95rem; color:#555; margin-top:6px;">Led comprehensive study design, XR system implementation, statistical analysis, and manuscript preparation.</div>
                 </div>
             </div>
@@ -1127,4 +1141,3 @@
     </script>
 </body>
 </html>
-
